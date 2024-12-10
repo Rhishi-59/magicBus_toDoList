@@ -10,13 +10,13 @@ function add(){
         newElement.innerHTML=`${input.value} "<i>delete</i
         >"`;
         text.appendChild(newElement);
+        
         newElement.querySelector("i").addEventListener("click",remove);
         function remove(){
               newElement.remove();
         }
         
-      
+        input.value = "";
     }
 
 }
-
